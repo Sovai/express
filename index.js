@@ -30,7 +30,7 @@ app.get("/", (req, res) => {
     httpOnly: true,
     sameSite: "none",
     secure: true,
-    domain: "*",
+    // domain: "*",
   });
 
   res.cookie(`rsa_key`, `encrypted cookie string Value`);
