@@ -22,7 +22,7 @@ var date = new Date();
 
 // add a day
 date.setDate(date.getDate() + 1);
-app.get("/", (req, res) => {
+app.get("/setcookie", (req, res) => {
   res.cookie(`access_token`, `encrypted cookie string Value`, {
     maxAge: 50000,
     // expires works the same as the maxAge
