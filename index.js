@@ -33,7 +33,15 @@ app.get("/setcookie", (req, res) => {
     // domain: "*",
   });
 
-  res.cookie(`rsa_key`, `encrypted cookie string Value`);
+  res.cookie(`rsa_key`, `encrypted cookie string Value`, {
+    maxAge: 50000,
+    // expires works the same as the maxAge
+    expires: date,
+    // httpOnly: true,
+    sameSite: "none",
+    secure: true,
+    // domain: "*",
+  });
   res.send("Cookie have been saved successfully");
 });
 
