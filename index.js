@@ -6,7 +6,7 @@ var cors = require("cors");
 const app = express();
 app.use(
   cors({
-    origin: "http://localhost:5500",
+    origin: "https://http-only-front-end.vercel.app",
     credentials: true,
     methods: ["GET", "PUT", "POST"],
   })
