@@ -38,8 +38,8 @@ app.get("/setcookie", (req, res) => {
     // expires works the same as the maxAge
     expires: date,
     // httpOnly: true,
-    sameSite: "none",
-    secure: true,
+    // sameSite: "none",
+    secure: false,
     // domain: "*",
   });
   res.send("Cookie have been saved successfully");
