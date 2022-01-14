@@ -6,7 +6,7 @@ var cors = require("cors");
 const app = express();
 app.use(
   cors({
-    origin: "https://http-only-front-end.vercel.app",
+    origin: "https://modest-hypatia-ed4230.netlify.app",
     credentials: true,
     methods: ["GET", "PUT", "POST"],
   })
