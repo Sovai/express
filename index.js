@@ -30,7 +30,6 @@ app.get("/setcookie", (req, res) => {
     httpOnly: true,
     sameSite: "none",
     secure: true,
-    // domain: "*",
   });
 
   res.cookie(`rsa_key`, `encrypted cookie string Value`, {
@@ -40,7 +39,6 @@ app.get("/setcookie", (req, res) => {
     // httpOnly: true,
     sameSite: "none",
     secure: true,
-    // domain: "*",
   });
   res.send("Cookie have been saved successfully");
 });
