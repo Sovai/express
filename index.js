@@ -28,7 +28,7 @@ app.get("/setcookie", (req, res) => {
     // expires works the same as the maxAge
     expires: date,
     httpOnly: true,
-    SameSite: "none",
+    sameSite: "none",
     secure: true,
   });
 
@@ -40,6 +40,7 @@ app.get("/setcookie", (req, res) => {
     sameSite: "none",
     secure: true,
   });
+
   res.send("Cookie have been saved successfully");
 });
 
