@@ -28,7 +28,7 @@ app.get("/setcookie", (req, res) => {
     // expires works the same as the maxAge
     expires: date,
     httpOnly: true,
-    SameSite: "None",
+    SameSite: "none",
     secure: true,
   });
 
