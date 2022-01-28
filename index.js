@@ -6,7 +6,7 @@ var cors = require("cors");
 const app = express();
 app.use(
   cors({
-    origin: "https://http-only-cookie-client.netlify.app",
+    origin: "https://express-brown.vercel.app",
     credentials: true,
     methods: ["GET", "PUT", "POST"],
   })
