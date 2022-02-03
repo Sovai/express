@@ -50,7 +50,7 @@ app.get("/getcookie", (req, res) => {
   res.send(req.cookies);
 });
 
-router.post("/forbidden", (request, response) => {
+app.post("/forbidden", (request, response) => {
   response.status(401).send({ error: "The URL is forbidden" });
 });
 
