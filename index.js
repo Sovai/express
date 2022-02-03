@@ -50,5 +50,9 @@ app.get("/getcookie", (req, res) => {
   res.send(req.cookies);
 });
 
+router.post("/forbidden", (request, response) => {
+  response.status(401).send({ error: "The URL is forbidden" });
+});
+
 //server listening to port 8000
 app.listen(8000, () => console.log("The server is running port 8000..."));
