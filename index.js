@@ -6,8 +6,9 @@ var cors = require("cors");
 const app = express();
 app.use(
   cors({
-    origin: "https://http-only-cookie-client.netlify.app",
-    credentials: true,
+    // origin: "https://http-only-cookie-client.netlify.app",
+    // credentials: true,
+    origin: "*",
     methods: ["GET", "PUT", "POST"],
   })
 );
